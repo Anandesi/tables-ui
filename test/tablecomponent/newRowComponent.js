@@ -1,34 +1,29 @@
-//
-//
-//
-//
-//
-//
 // import React from 'react';
-//
-//
-//
-//
+// //component
 // import NewRow  from '../../public/app/components/tableComponents/newRowComponent.js';
 //
 //
-// import RowErrorComponent  from '../../public/app/components/tableComponents/rowErrorComponents.js';
-// import GenericNewTd  from '../../public/app/components/tableComponents/genericNewTdComponent';
-//
-//
-// describe('<NewRow >', () => {
-//
-//
+// describe('<Table NewRow >', () => {
 //
 //   let wrapper;
-//     before(() => {
-//       wrapper = shallow(< NewRow />);
-//     });
+//   before(() => {
+//         const props = {
+//           rowObject:{
+//             error:sinon.spy()
+//           },
+//           tableStore: {
+//               setColumnsData:sinon.spy()
+//             },
+//             //overlap:true
+//         };
 //
-//     it('Component is rendering', () => {
-//       expect(wrapper).to.exist;
+//   wrapper = shallow(<NewRow {...props}/>);
 //   });
 //
 //
+//
+//     it('Component is rendering', () => {
+//       expect(wrapper).to.exist;
+//     });
 //
 // });

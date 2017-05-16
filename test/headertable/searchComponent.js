@@ -4,7 +4,7 @@ import React from 'react';
 
 import Search from '../../public/app/components/headerComponents/searchComponent.js';
 
-describe('< Search/>', () => {
+describe('< searchComponent/>', () => {
   let wrapper;
     before(() => {
       wrapper = shallow(< Search/>);

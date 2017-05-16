@@ -4,7 +4,7 @@
 // import React from 'react';
 // //components
 //
-// import GenericNewTd from '../../public/app/components/tableComponents/agenericNewTdComponent.js';
+// import GenericNewTd from '../../public/app/components/tableComponents/genericNewTdComponent.js';
 //
 // describe('< Search/>', () => {
 //   let wrapper;

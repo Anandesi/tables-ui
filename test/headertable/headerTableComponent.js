@@ -1,21 +1,28 @@
 // import React from 'react';
 //
-//
-//
 // //components
-// import HeaderTable from '../public/app/components/headerComponents/headerTableComponent.js';
+// import HeaderTable from '../../public/app/components/headerComponents/headerTableComponent.js';
 //
 // describe('<headerTableComponent.js/>', () => {
 //
-//   let wrapper;
+//     let wrapper;
 //     before(() => {
-//       wrapper = shallow(< HeaderTable />);
+//           const props = {
+//               tableStore: {
+//                   showLoader:sinon.spy(),
+//                   changeTable :sinon.spy(),
+//                   deleteTable:[],
+//                   createTable:[]
+//
+//                 }
+//         };
+//       wrapper = shallow(<HeaderTable {...props}/>);
 //     });
+//
 //
 //     it('Component is rendering', () => {
 //       expect(wrapper).to.exist;
 //   });
 //
 //
-// tableStore
 // });
