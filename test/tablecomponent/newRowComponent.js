@@ -8,6 +8,7 @@
 //   let wrapper;
 //   before(() => {
 //         const props = {
+//           overlap:sinon.spy(),
 //           rowObject:{
 //             error:sinon.spy()
 //           },

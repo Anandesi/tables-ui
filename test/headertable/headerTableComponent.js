@@ -8,6 +8,7 @@
 //     let wrapper;
 //     before(() => {
 //           const props = {
+//
 //               tableStore: {
 //                   showLoader:sinon.spy(),
 //                   changeTable :sinon.spy(),
