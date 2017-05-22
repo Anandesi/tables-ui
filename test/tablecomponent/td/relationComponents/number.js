@@ -1,27 +1,39 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-//
-// class Number extends React.Component {
-// 	constructor(){
-// 		super()
-// 		this.state = {
-//
-// 		}
-// 	}
-// 	componentDidMount(){
-//
-// 	}
-//     changeHandler(e){
-//     	this.props.updateElementData(e.target.value,this.props.columnData.name)
-//     }
-// 	render() {
-// 		return (
-// 			<div className="textRaltion">
-// 				<span className="textnamerlation"> { this.props.columnData.name } </span>
-//             	<input value={this.props.elementData || ''} onChange={this.changeHandler.bind(this)} className="textinputrltion" type="number" />
-//             </div>
-// 		);
-// 	}
-// }
-//
-// export default Number;
+
+import React from 'react';
+import Number from '../../../../public/app/components/tableComponents/td/relationComponents/number.js';
+
+describe('<TABLE TD relationComponents Number />', () => {
+
+  let wrapper;
+  before(() => {
+        const props = {
+					updateElementData:sinon.spy(),
+					removeFromElementData:sinon.spy(),
+					index:sinon.spy(),
+          generaliseACL:sinon.spy(),
+          columnData:{
+            name:sinon.spy()
+          },
+          elementData:{
+            document:{
+              read:{
+                allow:{
+                  user:[]
+                }
+              }
+            }
+          }
+
+
+
+
+        };
+
+  wrapper = shallow(< Number  {...props}/>);
+  });
+
+    it('Component is rendering', () => {
+      expect(wrapper).to.exist;
+    });
+
+});

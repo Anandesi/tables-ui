@@ -1,6 +1,5 @@
 // import React from 'react';
-// import DatePicker from 'material-ui/DatePicker';
-// import TimePicker from 'material-ui/TimePicker';
+//
 // import  DateTimeListComponent from '../../../../public/app/components/tableComponents/td/listComponents/dateTimeList.js';
 //
 // describe('<TABLE TD listComponents  DateTimeListComponent/>', () => {
@@ -11,7 +10,8 @@
 // 					updateElementData:sinon.spy(),
 // 					removeFromElementData:sinon.spy(),
 // 					data:[],
-// 					index:[]
+// 					index:[],
+//           isListOfRelation:''
 //         };
 //
 //   wrapper = shallow(< DateTimeListComponent {...props}/>);
